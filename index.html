@@ -349,27 +349,26 @@ text-decoration: none;
     font-weight: 600;
 }
 /* End */
-.t-des ul {
-  list-style-position: inside; /* ช่วยให้ bullet อยู่ในกรอบ */
-  padding-left: 1em;           /* เพิ่ม padding ซ้ายเล็กน้อย */
-  margin: 0;
-}
-
-.t-des li {
-  padding-left: 0.5em;
-  text-indent: -0.5em;         /* ดึงข้อความมาชิด bullet */
-  line-height: 1.6;
-}
-.container-icon ul {
-      list-style-position: inside; /* ช่วยให้ bullet อยู่ในกรอบ */
-  padding-left: 1em;           /* เพิ่ม padding ซ้ายเล็กน้อย */
-  margin: 0;
-}
-.container-icon li {
-      padding-left: 0.5em;
-  text-indent: -0.5em;         /* ดึงข้อความมาชิด bullet */
-  line-height: 1.6;
-}
+.custom-bullet-list {
+    padding-left: 1em;
+  }
+  .custom-bullet-item {
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 5vw;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+  }
+  .custom-bullet-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1;
+  }
     </style>
 
 <div class="maind">
@@ -451,50 +450,35 @@ grace.
 
 
 <section class="content-destination">
-
-<div class="destination">
-
-
+  <div class="destination">
     <div class="img-des">
-        <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/picture-1/Text-Content.webp" alt="">
+      <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/picture-1/Text-Content.webp" alt="">
     </div>
-
     <div class="text-destination">
- <div class="img-logo-l-des">
-<img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/Text-Header/AA-21.webp" alt="ดาว">
-</div>
-<div class="t-des">
-    <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/EN/History/picture/text-4-En.webp" alt="ผู้ให้บริการแบบครบวงจรในธุรกิจอัญมณี">
- <p>
-NGG offers a complete end-to-end serviceacross the jewellery value chain - from raw gemstone sourcing to final
-product manufacturing. Our in-house factory, internationally certified laboratory,and global-standard quality control ensureexcellence at every stage
-</p>
+      <div class="img-logo-l-des">
+        <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/Text-Header/AA-21.webp" alt="ดาว">
+      </div>
+      <div class="t-des">
+        <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/EN/History/picture/text-4-En.webp" alt="ผู้ให้บริการแบบครบวงจรในธุรกิจอัญมณี">
+        <p>
+          NGG offers a complete end-to-end service across the jewellery value chain - from raw gemstone sourcing to final product manufacturing. Our in-house factory, internationally certified laboratory, and global-standard quality control ensure excellence at every stage
+        </p>
+        <img style="width: 40%; padding-top: 1vw; padding-bottom: 1vw;" src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/EN/History/picture/text-5-En.webp" alt="">
 
+        <div class="custom-bullet-list">
+          <div class="custom-bullet-item">Direct Sourcing: Ethically sourced gemstones and precious metals straight from the mine</div>
+          <div class="custom-bullet-item">In-House Manufacturing: Precision-crafted in our advanced facilities</div>
+          <div class="custom-bullet-item">International Lab Certification: Every piece undergoes comprehensive testing and grading, verified by our lab under globally recognized standards</div>
+          <div class="custom-bullet-item">Digital E-Certificate: A modern, secure way to validate authenticity and quality, providing confidence and transparency to every customer</div>
+        </div>
 
-
-<img style="width: 40%; padding-top: 1vw;
-    padding-bottom: 1vw;" src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/EN/History/picture/text-5-En.webp" alt="">
-<ul>
-    <li>Direct Sourcing: Ethically sourced gemstones and precious metals straight from the min</li>
-    <li>In-House Manufacturing: Precision-crafted inour advanced facilities using </li>
-    <li>International Lab Certification: Every piece undergoes comprehensivetesting and grading, verified by our lab
-under globally recognized standards</li>
-    <li>
-     Digital E-Certificate: A modern, secure way to validate authenticity and quality, providing confidence and
-transparency to every customer.
-    </li>
-
-</ul> <br><br>
-    <p>
-  NGG is your trusted partner for quality, innovation, and integrity throughout the jewellery supply chain
-<br><br>
-</p>
-
-</div>
-
+        <br><br>
+        <p>
+          NGG is your trusted partner for quality, innovation, and integrity throughout the jewellery supply chain
+        </p>     <br><br>
+      </div>
     </div>
-</div>
-
+  </div>
 </section>
 
 
@@ -559,11 +543,11 @@ semi-precious stones intoexquisite jewellery,ensuring 100% quality control and e
             <span class="text-icon-head">
 Values
             </span>
-            <ul>
 <li>Every piece holds timeless value and personal significance.</li>
 <li>Crafted exclusively from 100% genuine natural materials.</li>
 <li>Designed to build trust,elevate brand image, and support confident purchase decisions.</li>
-</ul>
+
+      
         </div>
           <div class="item-content-icon">
             <div class="img-icon-detail">
@@ -572,12 +556,9 @@ Values
               <span class="text-icon-head">
              Assurance
             </span>
-
-<ul>
-
     <li>  Every product comes with an official certificate of guarantee.</li>
     <li> Most items are eligible for buy-back, trade-in.</li>
- </ul> 
+  
    
         </div>
 
@@ -588,11 +569,9 @@ Values
              <span class="text-icon-head">
               Laboratory
             </span>
-         <ul>  
             <li>All products are verified in NGG's certified laboratory.</li>
                <li>Quality isassured through professional testing byexperienced gemologists using advanced equipment.</li>
-       </ul> 
-            </div>
+        </div>
           <div class="item-content-icon">
           <div class="img-icon-detail">
                 <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/Text-Header/icon-4.webp" alt="icon">
@@ -600,11 +579,10 @@ Values
             <span class="text-icon-head">
              Ultimate Masterpieces
             </span>
-      <ul>
+      
             <li>Each design is thoughtfully created to complement the wearer's physiqueand suita variety of occasions.</li>  
               <li>Our jewellery is designed using the science of Physiological Fit for maximum comfort and elegance.</li>
-       </ul>
-            </div>
+        </div>
           <div class="item-content-icon">
             <div class="img-icon-detail">
                     <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/Text-Header/icon-5.webp" alt="icon">
@@ -612,11 +590,10 @@ Values
               <span class="text-icon-head">
                Expertise
             </span>
-       <ul>    
+            
             <li>Fully integrated operations, from sourcing and manufacturing to global distribution.</li>  
               <li> Operated with international standards and professionalism, representing world-class jewellery brands.</li>
-       </ul> 
-            </div>
+        </div>
           <div class="item-content-icon">
          <div class="img-icon-detail">
                 <img src="https://ngg-web-jew.s3.ap-southeast-1.amazonaws.com/assets/static/TH/History/Text-Header/icon-6.webp" alt="icon">
@@ -624,12 +601,11 @@ Values
            <span class="text-icon-head">
                Smart - The Three E-System
             </span>
-        <ul>  
          <li> E-System :  Anintegrated operations platform offering seamless 24/7 service, both online and offline.</li>  
               <li>E-Cert:  A high-accuracy product and service database enabling fast and reliable verification.</li>
                <li>E-Catalogue & Application: A user-friendly digital catalogue and mobileapp for browsing collections and
 accessing services anytime, anywhere.</li>
-              </ul>  
+              
         </div>
      
     </div>
